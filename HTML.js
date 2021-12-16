@@ -1,14 +1,18 @@
-export function createDiv(element){
+export function createDiv(){
     let newDiv = document.createElement('div');
     newDiv.innerHTML = "Hello je suis une div !";
-    element.appendChild(newDiv);
+  return newDiv;
 }
 
-export function createInput(){
-    return "Hello je suis un input !";
+export function createInput(type){
+    let newInput = document.createElement('input');
+    newInput.type = type;
+    return newInput;
 }
 
-export function createLabel(){
-    return "Hello je suis un label !";
+export function createLabel(type){
+    let newLabel = document.createElement('label');
+    newLabel.innerHTML = type;
+    return newLabel
 }
 
